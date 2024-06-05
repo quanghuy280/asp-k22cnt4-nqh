@@ -1,0 +1,63 @@
+﻿@model IEnumerable<NguyenQuangHuy_Baithigiuaky.Models.NqhCustomer>
+
+@{
+    ViewBag.Title = "NqhIndex";
+}
+
+<h2>NqhIndex</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.msv_CustId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nqh_FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nqh_Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nqh_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nqh_Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nqh_Balance)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.msv_CustId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nqh_FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nqh_Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nqh_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nqh_Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nqh_Balance)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
