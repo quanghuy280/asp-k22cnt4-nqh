@@ -1,0 +1,39 @@
+﻿@model IEnumerable<NqhBaiKiemTraGK.Models.NqhKhoa>
+
+@{
+    ViewBag.Title = "NqhIndex";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("NqhCreate New", "NqhCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NqhTenKH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NqhTrangThai)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NqhTenKH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NqhTrangThai)
+        </td>
+        <td>
+            @Html.ActionLink("NqhEdit", "NqhEdit", new { id=item.NqhMaKH }) |
+            @Html.ActionLink("NqhDetails", "NqhDetails", new { id=item.NqhMaKH }) |
+            @Html.ActionLink("NqhDelete", "NqhDelete", new { id=item.NqhMaKH })
+        </td>
+    </tr>
+}
+
+</table>

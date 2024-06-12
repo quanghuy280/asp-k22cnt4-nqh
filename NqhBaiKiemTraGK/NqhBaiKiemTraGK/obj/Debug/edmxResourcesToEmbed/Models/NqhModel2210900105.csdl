@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NqhK22CNT4Lesson07PRModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="NqhKhoa">
+    <Key>
+      <PropertyRef Name="NqhMaKH" />
+    </Key>
+    <Property Name="NqhMaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="NqhTenKH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NqhTrangThai" Type="Boolean" />
+    <NavigationProperty Name="nqhSinhVien" Relationship="NqhK22CNT4Lesson07PRModel.FK_nqhSinhVien_NqhKhoa" FromRole="NqhKhoa" ToRole="nqhSinhVien" />
+  </EntityType>
+  <EntityType Name="nqhSinhVien">
+    <Key>
+      <PropertyRef Name="NqhMaSV" />
+    </Key>
+    <Property Name="NqhMaSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NqhHoSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NqhTenSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nqhNgaySinh" Type="DateTime" Precision="0" />
+    <Property Name="NqhPhai" Type="Boolean" />
+    <Property Name="NqhPhone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="NqhEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="NqhMaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="NqhKhoa" Relationship="NqhK22CNT4Lesson07PRModel.FK_nqhSinhVien_NqhKhoa" FromRole="nqhSinhVien" ToRole="NqhKhoa" />
+  </EntityType>
+  <EntityContainer Name="NqhK22CNT4Lesson07PREntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NqhKhoa" EntityType="Self.NqhKhoa" />
+    <EntitySet Name="nqhSinhVien" EntityType="Self.nqhSinhVien" />
+    <AssociationSet Name="FK_nqhSinhVien_NqhKhoa" Association="NqhK22CNT4Lesson07PRModel.FK_nqhSinhVien_NqhKhoa">
+      <End Role="NqhKhoa" EntitySet="NqhKhoa" />
+      <End Role="nqhSinhVien" EntitySet="nqhSinhVien" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_nqhSinhVien_NqhKhoa">
+    <End Type="NqhK22CNT4Lesson07PRModel.NqhKhoa" Role="NqhKhoa" Multiplicity="0..1" />
+    <End Type="NqhK22CNT4Lesson07PRModel.nqhSinhVien" Role="nqhSinhVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NqhKhoa">
+        <PropertyRef Name="NqhMaKH" />
+      </Principal>
+      <Dependent Role="nqhSinhVien">
+        <PropertyRef Name="NqhMaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

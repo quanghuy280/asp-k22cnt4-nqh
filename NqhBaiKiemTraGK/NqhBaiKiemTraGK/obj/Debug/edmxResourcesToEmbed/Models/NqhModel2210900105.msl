@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NqhK22CNT4Lesson07PRModelStoreContainer" CdmEntityContainer="NqhK22CNT4Lesson07PREntities">
+    <EntitySetMapping Name="NqhKhoa">
+      <EntityTypeMapping TypeName="NqhK22CNT4Lesson07PRModel.NqhKhoa">
+        <MappingFragment StoreEntitySet="NqhKhoa">
+          <ScalarProperty Name="NqhMaKH" ColumnName="NqhMaKH" />
+          <ScalarProperty Name="NqhTenKH" ColumnName="NqhTenKH" />
+          <ScalarProperty Name="NqhTrangThai" ColumnName="NqhTrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nqhSinhVien">
+      <EntityTypeMapping TypeName="NqhK22CNT4Lesson07PRModel.nqhSinhVien">
+        <MappingFragment StoreEntitySet="nqhSinhVien">
+          <ScalarProperty Name="NqhMaKH" ColumnName="NqhMaKH" />
+          <ScalarProperty Name="NqhMaSV" ColumnName="NqhMaSV" />
+          <ScalarProperty Name="NqhHoSV" ColumnName="NqhHoSV" />
+          <ScalarProperty Name="NqhTenSV" ColumnName="NqhTenSV" />
+          <ScalarProperty Name="nqhNgaySinh" ColumnName="nqhNgaySinh" />
+          <ScalarProperty Name="NqhPhai" ColumnName="NqhPhai" />
+          <ScalarProperty Name="NqhPhone" ColumnName="NqhPhone" />
+          <ScalarProperty Name="NqhEmail" ColumnName="NqhEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

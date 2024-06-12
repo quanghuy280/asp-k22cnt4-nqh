@@ -1,0 +1,40 @@
+﻿@model NqhBaiKiemTraGK.Models.NqhKhoa
+
+@{
+    ViewBag.Title = "NqhDelete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>NqhKhoa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NqhTenKH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NqhTenKH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NqhTrangThai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NqhTrangThai)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "NqhIndex")
+        </div>
+    }
+</div>
