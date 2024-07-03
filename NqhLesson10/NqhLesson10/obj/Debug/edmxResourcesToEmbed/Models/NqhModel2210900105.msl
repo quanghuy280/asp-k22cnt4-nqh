@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NqhLesson10ModelStoreContainer" CdmEntityContainer="NqhLesson10Entities">
+    <EntitySetMapping Name="nqhAccounts">
+      <EntityTypeMapping TypeName="NqhLesson10Model.nqhAccount">
+        <MappingFragment StoreEntitySet="nqhAccount">
+          <ScalarProperty Name="NqhID" ColumnName="NqhID" />
+          <ScalarProperty Name="NqhUserName" ColumnName="NqhUserName" />
+          <ScalarProperty Name="NqhPassWord" ColumnName="NqhPassWord" />
+          <ScalarProperty Name="NqhFullName" ColumnName="NqhFullName" />
+          <ScalarProperty Name="NqhEmail" ColumnName="NqhEmail" />
+          <ScalarProperty Name="NqhPhone" ColumnName="NqhPhone" />
+          <ScalarProperty Name="NqhActive" ColumnName="NqhActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

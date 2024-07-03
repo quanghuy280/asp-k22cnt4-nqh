@@ -1,0 +1,64 @@
+﻿@model IEnumerable<NqhLesson10.Models.nqhAccount>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_NqhLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NqhUserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NqhPassWord)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NqhFullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NqhEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NqhPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NqhActive)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NqhUserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NqhPassWord)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NqhFullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NqhEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NqhPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NqhActive)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NqhID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NqhID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NqhID })
+        </td>
+    </tr>
+}
+
+</table>

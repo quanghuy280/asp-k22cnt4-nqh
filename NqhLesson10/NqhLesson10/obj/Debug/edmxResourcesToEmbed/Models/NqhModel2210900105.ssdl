@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NqhLesson10Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="nqhAccount">
+    <Key>
+      <PropertyRef Name="NqhID" />
+    </Key>
+    <Property Name="NqhID" Type="int" Nullable="false" />
+    <Property Name="NqhUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NqhPassWord" Type="nvarchar" MaxLength="50" />
+    <Property Name="NqhFullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NqhEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="NqhPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="NqhActive" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="NqhLesson10ModelStoreContainer">
+    <EntitySet Name="nqhAccount" EntityType="Self.nqhAccount" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

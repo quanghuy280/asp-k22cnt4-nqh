@@ -1,0 +1,73 @@
+﻿@model NqhLesson10.Models.nqhAccount
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_NqhLayout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>nqhAccount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NqhUserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NqhUserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NqhPassWord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NqhPassWord)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NqhFullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NqhFullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NqhEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NqhEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NqhPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NqhPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NqhActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NqhActive)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
