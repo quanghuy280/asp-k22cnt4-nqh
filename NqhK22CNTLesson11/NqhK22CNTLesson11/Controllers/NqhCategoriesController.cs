@@ -14,7 +14,7 @@ namespace NqhK22CNTLesson11.Controllers
         private NqhK22CNTLesson11Entities db = new NqhK22CNTLesson11Entities();
 
         // GET: NqhCategories
-        public ActionResult Index()
+        public ActionResult NqhIndex()
         {
             return View(db.NqhCategories.ToList());
         }
@@ -51,7 +51,7 @@ namespace NqhK22CNTLesson11.Controllers
             {
                 db.NqhCategories.Add(nqhCategory);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("NqhIndex");
             }
 
             return View(nqhCategory);
@@ -83,7 +83,7 @@ namespace NqhK22CNTLesson11.Controllers
             {
                 db.Entry(nqhCategory).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("NqhIndex");
             }
             return View(nqhCategory);
         }
@@ -111,7 +111,7 @@ namespace NqhK22CNTLesson11.Controllers
             NqhCategory nqhCategory = db.NqhCategories.Find(id);
             db.NqhCategories.Remove(nqhCategory);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("NqhIndex");
         }
 
         protected override void Dispose(bool disposing)

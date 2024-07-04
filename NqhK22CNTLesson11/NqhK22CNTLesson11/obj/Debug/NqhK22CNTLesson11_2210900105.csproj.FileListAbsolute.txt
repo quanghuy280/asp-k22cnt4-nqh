@@ -72,7 +72,6 @@ C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\System.Web.Web
 C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\Newtonsoft.Json.xml
 C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\Antlr3.Runtime.pdb
 C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\obj\Debug\NqhK22CNTLesson11_2210900105.csproj.AssemblyReference.cache
 C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\obj\Debug\NqhK22CNTLesson11_2210900105.csproj.CoreCompileInputs.cache
 C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\obj\Debug\NqhK22CNTLesson11_2210900105.csproj.CopyComplete
 C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\obj\Debug\NqhK22CNTLesson11.dll
@@ -81,3 +80,8 @@ C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\EntityFramewor
 C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\EntityFramework.SqlServer.dll
 C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\EntityFramework.xml
 C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\EntityFramework.SqlServer.xml
+C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\DocumentFormat.OpenXml.dll
+C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\DocumentFormat.OpenXml.Framework.dll
+C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\DocumentFormat.OpenXml.xml
+C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\bin\DocumentFormat.OpenXml.Framework.xml
+C:\reactj\asp-k22cnt4-nqh\NqhK22CNTLesson11\NqhK22CNTLesson11\obj\Debug\NqhK22CNTLesson11_2210900105.csproj.AssemblyReference.cache
