@@ -1,0 +1,35 @@
+﻿@model NqhK22CNTLesson11.Controllers.NqhCategory
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Nqh2210900105Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NqhCategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NqhCateName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NqhCateName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NqhStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NqhStatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NqhID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

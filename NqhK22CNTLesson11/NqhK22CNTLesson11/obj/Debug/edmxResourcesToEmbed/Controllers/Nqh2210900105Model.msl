@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NqhK22CNTLesson11ModelStoreContainer" CdmEntityContainer="NqhK22CNTLesson11Entities">
+    <EntitySetMapping Name="NqhCategories">
+      <EntityTypeMapping TypeName="NqhK22CNTLesson11Model.NqhCategory">
+        <MappingFragment StoreEntitySet="NqhCategory">
+          <ScalarProperty Name="NqhID" ColumnName="NqhID" />
+          <ScalarProperty Name="NqhCateName" ColumnName="NqhCateName" />
+          <ScalarProperty Name="NqhStatus" ColumnName="NqhStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NqhProducts">
+      <EntityTypeMapping TypeName="NqhK22CNTLesson11Model.NqhProduct">
+        <MappingFragment StoreEntitySet="NqhProduct">
+          <ScalarProperty Name="NqhId2210900105" ColumnName="NqhId2210900105" />
+          <ScalarProperty Name="NqhProName" ColumnName="NqhProName" />
+          <ScalarProperty Name="NqhQty" ColumnName="NqhQty" />
+          <ScalarProperty Name="NqhPrice" ColumnName="NqhPrice" />
+          <ScalarProperty Name="NqhCateId" ColumnName="NqhCateId" />
+          <ScalarProperty Name="NqhActive" ColumnName="NqhActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

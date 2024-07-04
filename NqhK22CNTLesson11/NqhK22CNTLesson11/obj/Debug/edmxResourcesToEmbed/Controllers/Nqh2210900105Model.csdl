@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NqhK22CNTLesson11Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="NqhCategory">
+    <Key>
+      <PropertyRef Name="NqhID" />
+    </Key>
+    <Property Name="NqhID" Type="Int32" Nullable="false" />
+    <Property Name="NqhCateName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NqhStatus" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="NqhProduct">
+    <Key>
+      <PropertyRef Name="NqhId2210900105" />
+    </Key>
+    <Property Name="NqhId2210900105" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NqhProName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NqhQty" Type="Int32" />
+    <Property Name="NqhPrice" Type="Double" />
+    <Property Name="NqhCateId" Type="Int32" />
+    <Property Name="NqhActive" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="NqhK22CNTLesson11Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NqhCategories" EntityType="Self.NqhCategory" />
+    <EntitySet Name="NqhProducts" EntityType="Self.NqhProduct" />
+  </EntityContainer>
+</Schema>

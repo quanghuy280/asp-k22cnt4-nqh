@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NqhK22CNTLesson11Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="NqhCategory">
+    <Key>
+      <PropertyRef Name="NqhID" />
+    </Key>
+    <Property Name="NqhID" Type="int" Nullable="false" />
+    <Property Name="NqhCateName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NqhStatus" Type="bit" />
+  </EntityType>
+  <EntityType Name="NqhProduct">
+    <Key>
+      <PropertyRef Name="NqhId2210900105" />
+    </Key>
+    <Property Name="NqhId2210900105" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NqhProName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NqhQty" Type="int" />
+    <Property Name="NqhPrice" Type="float" />
+    <Property Name="NqhCateId" Type="int" />
+    <Property Name="NqhActive" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="NqhK22CNTLesson11ModelStoreContainer">
+    <EntitySet Name="NqhCategory" EntityType="Self.NqhCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NqhProduct" EntityType="Self.NqhProduct" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
